@@ -18,5 +18,10 @@ namespace C__EF_S02_Assignment.Entities
         public int Dept_Id { get; set; }
         public Department Department { get; set; }
 
+        public override string ToString()
+        {
+            return $"Id : {Id} :: Name : {Name} :: Bouns : {Bouns} :: Salary : {Salary} :: Address : {Address} :: HourRate : {HourRate}";
+        }
+
     }
 }

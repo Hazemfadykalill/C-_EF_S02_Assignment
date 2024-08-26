@@ -15,5 +15,10 @@ namespace C__EF_S02_Assignment.Entities
         //Foreign Key
 
         public List<Topic> Topics { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id : {Id} :: Name : {Name} :: Duration : {Duration} :: Description : {Description}";
+        }
     }
 }

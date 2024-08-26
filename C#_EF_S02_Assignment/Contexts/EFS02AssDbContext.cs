@@ -29,10 +29,10 @@ namespace C__EF_S02_Assignment.Contexts
         //Names Table That In Database7
         public DbSet<Student> students { get; set; }
         public DbSet<Course> Courses { get; set; }
-        public DbSet<Course_Instructor> Course_Instructors { get; set; }
+        //public DbSet<StudentCourse> StudentCourses { get; set; }
+        //public DbSet<Course_Instructor> Course_Instructors { get; set; }
         public DbSet<Department> Departments { get; set; }
         public DbSet<Instructor> Instructors { get; set; }
-        public DbSet<StudentCourse> StudentCourses { get; set; }
         public DbSet<Topic> Topics { get; set; }
 
 

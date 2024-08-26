@@ -18,7 +18,7 @@ namespace C__EF_S02_Assignment.Configuration
         {
 
             builder.HasKey(c => c.Id);
-            builder.Property(c => c.Name).UseIdentityColumn(10,10);
+            builder.Property(c => c.Id).UseIdentityColumn(10,10);
 
             builder.Property(c => c.Name)
                    .IsRequired()

@@ -16,6 +16,9 @@ namespace C__EF_S02_Assignment.Entities
         // Foreign Key
         public int Dept_Id { get; set; }
         public Department Department { get; set; }
-
+        public override string ToString()
+        {
+            return $"Id : {Id} :: FName : {FName} :: LName : {FName} :: Address : {Address} :: DepartmentId : {Dept_Id}";
+        }
     }
 }

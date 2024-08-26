@@ -17,5 +17,10 @@ namespace C__EF_S02_Assignment.Entities
 
         public Course Course { get; set; }
 
+        public override string ToString()
+        {
+            return $"Id : {Id} :: Name : {Name} ::  CpurseId : {Course_ID}";
+        }
+
     }
 }

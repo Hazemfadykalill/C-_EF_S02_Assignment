@@ -17,5 +17,10 @@ namespace C__EF_S02_Assignment.Entities
         public int Ins_Id  { get; set; }
 
         public Instructor Instructor { get; set; }
+
+        public override string ToString()
+        {
+            return $"Id : {Id} :: Name : {Name} :: HiringDate : {HiringDate} :: InstructorId : {Ins_Id}";
+        }
     }
 }
