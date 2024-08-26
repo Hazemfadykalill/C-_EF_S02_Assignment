@@ -8,5 +8,6 @@ namespace C__EF_S02_Assignment.Entities
 {
     public class Student
     {
+
     }
 }
