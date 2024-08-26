@@ -13,6 +13,7 @@ namespace C__EF_S02_Assignment.Entities
         public string Name { get; set; }
         public string Description { get; set; }
         //Foreign Key
-        public int Topic_ID { get; set; }
+
+        public List<Topic> Topics { get; set; }
     }
 }

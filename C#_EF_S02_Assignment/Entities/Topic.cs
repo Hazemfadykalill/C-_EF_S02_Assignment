@@ -11,5 +11,11 @@ namespace C__EF_S02_Assignment.Entities
 
         public int Id { get; set; }
         public string Name { get; set; }
+
+        //foreign Key
+        public int Course_ID { get; set; }
+
+        public Course Course { get; set; }
+
     }
 }
