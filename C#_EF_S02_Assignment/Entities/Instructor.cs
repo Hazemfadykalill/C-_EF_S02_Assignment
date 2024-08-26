@@ -6,19 +6,22 @@ using System.Threading.Tasks;
 
 namespace C__EF_S02_Assignment.Entities
 {
-    public class Student
+    public class Instructor
     {
         public int Id { get; set; }
-        public int Age { get; set; }
-        public string FName { get; set; }
-        public string LName { get; set; }
+        public string Name { get; set; }
+        public double Bouns { get; set; }
+        public double Salary { get; set; }
         public string Address { get; set; }
+        public double HourRate { get; set; }
         // Foreign Key
         public int Dept_Id { get; set; }
         public Department Department { get; set; }
+
         public override string ToString()
         {
-            return $"Id : {Id} :: FName : {FName} :: LName : {FName} :: Address : {Address} :: DepartmentId : {Dept_Id}";
+            return $"Id : {Id} :: Name : {Name} :: Bouns : {Bouns} :: Salary : {Salary} :: Address : {Address} :: HourRate : {HourRate}";
         }
+
     }
 }
