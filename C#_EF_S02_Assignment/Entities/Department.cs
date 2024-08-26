@@ -6,15 +6,13 @@ using System.Threading.Tasks;
 
 namespace C__EF_S02_Assignment.Entities
 {
-    public class Student
+    public class Department
     {
-        public int Id { get; set; }
-        public int Age { get; set; }
-        public string FName { get; set; }
-        public string LName { get; set; }
-        public string Address { get; set; }
-        // Foreign Key
-        public int Dept_Id { get; set; }
 
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public DateTime HiringDate { get; set; }
+        // Foreign Key
+        public int Ins_Id  { get; set; }
     }
 }
