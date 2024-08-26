@@ -15,6 +15,7 @@ namespace C__EF_S02_Assignment.Entities
         public string Address { get; set; }
         // Foreign Key
         public int Dept_Id { get; set; }
+        public Department Department { get; set; }
 
     }
 }
