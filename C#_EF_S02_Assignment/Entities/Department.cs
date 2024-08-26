@@ -13,7 +13,9 @@ namespace C__EF_S02_Assignment.Entities
         public string Name { get; set; }
         public DateTime HiringDate { get; set; }
         // Foreign Key
-        public int Ins_Id  { get; set; }
         public List<Student> Students { get; set; }
+        public int Ins_Id  { get; set; }
+
+        public Instructor Instructor { get; set; }
     }
 }
