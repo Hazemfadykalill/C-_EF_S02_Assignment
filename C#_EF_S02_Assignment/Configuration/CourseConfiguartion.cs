@@ -16,6 +16,19 @@ namespace C__EF_S02_Assignment.Configuration
         //foreign key
         public void Configure(EntityTypeBuilder<Course> builder)
         {
+
+            builder.HasKey(c => c.Id);
+            builder.Property(c => c.Name).UseIdentityColumn(10,10);
+
+            builder.Property(c => c.Name)
+                   .IsRequired()
+                   .HasMaxLength(100);
+
+            builder.Property(c => c.Description)
+                   .HasMaxLength(500);
+
+            builder.Property(c => c.Duration)
+                   .IsRequired();
             // Foreign Key [Course || Topic]
             builder.HasMany(C => C.Topics).WithOne(T => T.Course).HasForeignKey(C => C.Course_ID);
         }
